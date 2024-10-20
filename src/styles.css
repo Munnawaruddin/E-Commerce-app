@@ -1,0 +1,125 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+}
+
+/* Product list styles */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Product card styles */
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Button styles */
+button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons on small screens */
+    }
+}
+
+
+/* src/styles.css */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    flex: 1 1 calc(25% - 20px); /* Adjusts based on available width */
+    margin: 10px;
+}
+
+@media (max-width: 1200px) {
+    .product-card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        flex: 1 1 100%; /* 1 item per row for mobile */
+    }
+}
+
+/* src/styles.css */
+h1, h2, h3 {
+    font-size: 2rem; /* Desktop default */
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Reduce font size on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.2rem; /* Further reduce on mobile */
+    }
+}
+
+

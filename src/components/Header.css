@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 1rem;
+    padding: 0.5rem;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 1.5rem; 
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .icon:hover {
+    color: #ccc; 
+  }
+  .button-of {
+    margin-bottom: 10px;
+    background-color: white;
+  }
+
+
+@media (max-width: 768px) {
+    .icons {
+      gap: 1rem; 
+    }
+  
+    .search-bar {
+      width: 100%; 
+    }
+  }
+  
